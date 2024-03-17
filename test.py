@@ -61,12 +61,12 @@ class App(QMainWindow):
 
         if data == None:
             return None
-
-        try:
-            dbb = db.MyData()
-            dbb.insert_data(data)
-        except:
-            pass
+        # Закоментил так как не смог скачать sql alchemy но если скачать будет работать
+        # try:
+        #     dbb = db.MyData()
+        #     dbb.insert_data(data)
+        # except:
+        #     pass
 
         self.add_row(data)
 
